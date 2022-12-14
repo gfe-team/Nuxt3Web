@@ -1,0 +1,4 @@
+# 忽略格式化文件 
+.nuxt
+.output
+node_modules

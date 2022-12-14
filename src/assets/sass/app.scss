@@ -1,0 +1,59 @@
+@import 'variables';
+
+*::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+/* transitions */
+.page-enter-active {
+  transition: all 0.1s ease-out;
+}
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter-from,
+.page-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.layout-enter-active {
+  transition: all 0.1s ease-out;
+}
+.layout-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.layout-enter-from,
+.layout-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.router-link-exact-active {
+  color: green;
+}
